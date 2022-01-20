@@ -11,7 +11,7 @@ public class Exercicio1 {
 		int ano = 0;
 		int idade = 0;
 		
-		System.out.println("\nResoponda às questões abaixo para calcular sua idade em dias");
+		System.out.println("\nResoponda às questões abaixo para calcular a sua idade em dias");
 		
 		System.out.print("\nQuantos anos você tem?\n");
 		Scanner entrada1 = new Scanner(System.in);
