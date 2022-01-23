@@ -18,7 +18,7 @@ programa
 			{
 				escreva("Digite um número: ")
 				leia(matriz[linha][coluna])
-
+				
 				somaTotal += matriz[linha][coluna]
 
 					se(linha == coluna)
@@ -28,6 +28,10 @@ programa
 				limpa()
 			}
 		}
+		escreva("\n" + matriz[0][0] + " | " + matriz[0][1] + " | " + matriz[0][2] + 
+		        "\n" + matriz[1][0] + " | " + matriz[1][1] + " | " + matriz[1][2] + 
+			   "\n" + matriz[2][0] + " | " + matriz[2][1] + " | " + matriz[2][2] + "\n") 
+			
 		escreva("\nA soma de todos os valores da matriz é: " + somaTotal + "\n.")
 		escreva("\nA soma dos valores da diagonal principal é: " + somaDiagonal + "\n.")
 	}
@@ -37,7 +41,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 790; 
+ * @POSICAO-CURSOR = 804; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
