@@ -11,18 +11,18 @@ programa
 		escreva("Entre com o valor do ponto x1: ")
 		leia(x1)
 
-		escreva("Entre com o valor do ponto y2: ")
-		leia(y1)
-
 		escreva("Entre com o valor do ponto x2: ")
 		leia(x2)
+
+		escreva("Entre com o valor do ponto y1: ")
+		leia(y1)
 
 		escreva("Entre com o valor do ponto y2: ")
 		leia(y2)
 
-		distancia = mat.arredondar (mat.raiz (mat.potencia(x2-x1,2.0) - mat.potencia(y2-y1,2.0),2.0),2)
+		distancia = mat.raiz (mat.potencia((x2-x1),2.0) + mat.potencia((y2-y1),2.0),2.0)
 
-		escreva("O distância entre os dois pontos é: " + distancia)
+		escreva("A distância entre os dois pontos é: " + distancia)
 
 		
 	}
@@ -32,7 +32,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 435; 
+ * @POSICAO-CURSOR = 386; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
