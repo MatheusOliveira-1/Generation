@@ -5,9 +5,9 @@ public class LacosRepeticao {
 	public static void main(String[] args) {
 		
 		int numero = 0;
-		int numero2 = 2;
+		int numero2 = 3;
 		
-		while(numero < 3) {			
+		while(numero < 2) {			
 			System.out.println("Olá mundo, testando o ENQUANTO");
 			numero++;
 		}
