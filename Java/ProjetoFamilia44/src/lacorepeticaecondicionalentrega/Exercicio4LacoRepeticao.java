@@ -36,7 +36,7 @@ public class Exercicio4LacoRepeticao {
 		int nerv40 = 0;
 		int calm18 = 0;
 
-		while (pessoa < 20) {
+		while (pessoa < 150) {
 			pessoa++;
 			sexo = 0;
 			temperamento = 0;
