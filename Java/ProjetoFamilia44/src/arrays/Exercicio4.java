@@ -158,7 +158,6 @@ public class Exercicio4 {
 			default:
 				if ((opcao != 0))
 					System.out.println("Opcão inválida!");
-				break;
 			}
 		} while (opcao != 0);
 		leia.close();
