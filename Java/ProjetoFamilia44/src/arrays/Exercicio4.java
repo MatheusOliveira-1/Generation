@@ -116,46 +116,30 @@ public class Exercicio4 {
 			case 3:
 				int l = 0;
 				int c = 0; 
-				int constante;
-				while (opcao != 1 && opcao != 2) {
-					System.out.println("\nInforme o número da matriz em que deseja incluir a constante: Matriz 1 ou Matriz 2");
-					opcao = leia.nextInt();
-
-					if (opcao != 1 && opcao != 2) {
-						System.out.println("\nA Matriz " + opcao + " não existe, por favor escolha 1 ou 2.");
-					}
-				}
+				
+				System.out.println("\nInforme o valor da constante que será inserido nas matrizes:");
+				final int constante = leia.nextInt();
 				
 				while (l != 1 && l != 2) {
-				System.out.println("\nInforme o número da linha");
+				System.out.println("\nInforme o número da linha:");
 				l = leia.nextInt();
 				
 
 				if (l != 1 && l != 2) {
-					System.out.println("\nA linha " + l + " não existe na Matriz " + opcao);
+					System.out.println("\nA linha " + l + " não existe!");
 				}
 			}
 				while (c != 1 && c != 2) {
-					System.out.println("\nInforme o número da coluna");
+					System.out.println("\nInforme o número da coluna:");
 					c = leia.nextInt();
 					
 
 					if (c != 1 && c != 2) {
-						System.out.println("\nA coluna " + c + " não existe na Matriz " + opcao);
+						System.out.println("\nA coluna " + c + " não existe!");
 					}
-				}
-				System.out.println("\nInforme o valor da constante:");
-				constante = leia.nextInt();
-				
-				switch(opcao) {
-					
-					case 1:
+				}		
 						matriz1[(l -1)][(c - 1)] = constante;
-						break;
-						
-					case 2:
 						matriz2[(l -1)][(c - 1)] = constante;
-				}
 
 				break;
 
