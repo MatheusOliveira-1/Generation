@@ -120,24 +120,14 @@ public class Exercicio4 {
 				System.out.println("\nInforme o valor da constante que será inserido nas matrizes:");
 				final int constante = leia.nextInt();
 
-				while (l != 1 && l != 2) {
-					System.out.println("\nInforme o número da linha:");
-					l = leia.nextInt();
+				for (l = 0; l < 2; l++) {
 
-					if (l != 1 && l != 2) {
-						System.out.println("\nA linha " + l + " não existe!");
+					for (c = 0; c < 2; c++) {
+
+						matriz1[(l)][(c)] += constante;
+						matriz2[(l)][(c)] += constante;
 					}
 				}
-				while (c != 1 && c != 2) {
-					System.out.println("\nInforme o número da coluna:");
-					c = leia.nextInt();
-
-					if (c != 1 && c != 2) {
-						System.out.println("\nA coluna " + c + " não existe!");
-					}
-				}
-				matriz1[(l - 1)][(c - 1)] = constante;
-				matriz2[(l - 1)][(c - 1)] = constante;
 
 				break;
 
