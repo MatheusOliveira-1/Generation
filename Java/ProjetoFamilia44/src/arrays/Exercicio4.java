@@ -23,16 +23,18 @@ public class Exercicio4 {
 		float[][] matriz1 = new float[2][2];
 		float[][] matriz2 = new float[2][2];
 		int opcao;
+		int l = 0;
+		int c = 0;
 
-		for (int i = 0; i < 2; i++) {
+		for (l = 0; l < 2; l++) {
 
-			for (int j = 0; j < 2; j++) {
+			for (c = 0; c < 2; c++) {
 
 				System.out.println("Informe um valor para a matriz 1: ");
-				matriz1[i][j] = leia.nextFloat();
+				matriz1[l][c] = leia.nextFloat();
 
 				System.out.println("Informe um valor para a matriz 2: ");
-				matriz2[i][j] = leia.nextFloat();
+				matriz2[l][c] = leia.nextFloat();
 
 			}
 		}
@@ -54,24 +56,24 @@ public class Exercicio4 {
 				System.out.println("\n\t    SOMA DAS MATRIZES");
 
 				System.out.println("\n Matriz 1\t Matriz 2\t RESULTADO");
-				for (int i = 0; i < 2; i++) {
+				for (l = 0; l < 2; l++) {
 
-					for (int j = 0; j < 2; j++) {
+					for (c = 0; c < 2; c++) {
 
-						System.out.print("[" + matriz1[i][j] + "]");
+						System.out.print("[" + matriz1[l][c] + "]");
 
-						if (j == 1) {
+						if (c == 1) {
 							System.out.print("\t");
 
-							for (j = 0; j < 2; j++) {
-								System.out.print("[" + matriz2[i][j] + "]");
+							for (c = 0; c < 2; c++) {
+								System.out.print("[" + matriz2[l][c] + "]");
 
-								if (j == 1) {
+								if (c == 1) {
 
 									System.out.print("\t");
 
-									for (j = 0; j < 2; j++) {
-										System.out.print("[" + (matriz1[i][j] + matriz2[i][j]) + "]");
+									for (c = 0; c < 2; c++) {
+										System.out.print("[" + (matriz1[l][c] + matriz2[l][c]) + "]");
 									}
 								}
 
@@ -86,24 +88,24 @@ public class Exercicio4 {
 				System.out.println("\n\t  SUBTRAÇÃO DAS MATRIZES");
 
 				System.out.println("\n Matriz 1\t Matriz 2\tRESULTADO");
-				for (int i = 0; i < 2; i++) {
+				for (l = 0; l < 2; l++) {
 
-					for (int j = 0; j < 2; j++) {
+					for (c = 0; c < 2; c++) {
 
-						System.out.print("[" + matriz1[i][j] + "]");
+						System.out.print("[" + matriz1[l][c] + "]");
 
-						if (j == 1) {
+						if (c == 1) {
 							System.out.print("\t");
 
-							for (j = 0; j < 2; j++) {
-								System.out.print("[" + matriz2[i][j] + "]");
+							for (c = 0; c < 2; c++) {
+								System.out.print("[" + matriz2[l][c] + "]");
 
-								if (j == 1) {
+								if (c == 1) {
 
 									System.out.print("\t");
 
-									for (j = 0; j < 2; j++) {
-										System.out.print("[" + (matriz2[i][j] - matriz1[i][j]) + "]");
+									for (c = 0; c < 2; c++) {
+										System.out.print("[" + (matriz2[l][c] - matriz1[l][c]) + "]");
 									}
 								}
 
@@ -114,32 +116,28 @@ public class Exercicio4 {
 				}
 				break;
 			case 3:
-				int l = 0;
-				int c = 0; 
-				
+
 				System.out.println("\nInforme o valor da constante que será inserido nas matrizes:");
 				final int constante = leia.nextInt();
-				
-				while (l != 1 && l != 2) {
-				System.out.println("\nInforme o número da linha:");
-				l = leia.nextInt();
-				
 
-				if (l != 1 && l != 2) {
-					System.out.println("\nA linha " + l + " não existe!");
+				while (l != 1 && l != 2) {
+					System.out.println("\nInforme o número da linha:");
+					l = leia.nextInt();
+
+					if (l != 1 && l != 2) {
+						System.out.println("\nA linha " + l + " não existe!");
+					}
 				}
-			}
 				while (c != 1 && c != 2) {
 					System.out.println("\nInforme o número da coluna:");
 					c = leia.nextInt();
-					
 
 					if (c != 1 && c != 2) {
 						System.out.println("\nA coluna " + c + " não existe!");
 					}
-				}		
-						matriz1[(l -1)][(c - 1)] = constante;
-						matriz2[(l -1)][(c - 1)] = constante;
+				}
+				matriz1[(l - 1)][(c - 1)] = constante;
+				matriz2[(l - 1)][(c - 1)] = constante;
 
 				break;
 
@@ -148,17 +146,17 @@ public class Exercicio4 {
 				System.out.println("\n   IMPRESSÃO DAS MATRIZES");
 
 				System.out.println("\n Matriz 1\t Matriz 2");
-				for (int i = 0; i < 2; i++) {
+				for (l = 0; l < 2; l++) {
 
-					for (int j = 0; j < 2; j++) {
+					for (c = 0; c < 2; c++) {
 
-						System.out.print("[" + matriz1[i][j] + "]");
+						System.out.print("[" + matriz1[l][c] + "]");
 
-						if (j == 1) {
+						if (c == 1) {
 							System.out.print("\t");
 
-							for (j = 0; j < 2; j++) {
-								System.out.print("[" + matriz2[i][j] + "]");
+							for (c = 0; c < 2; c++) {
+								System.out.print("[" + matriz2[l][c] + "]");
 
 							}
 						}
