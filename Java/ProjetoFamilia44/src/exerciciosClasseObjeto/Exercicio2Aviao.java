@@ -7,7 +7,7 @@ public class Exercicio2Aviao {
 	private int capacidade;
 	private int velocidadeMax;
 	
-	Exercicio2Aviao (String m, String comp, int cap, int v){
+	public Exercicio2Aviao (String m, String comp, int cap, int v){
 		
 		this.modelo = m;
 		this.companhia = comp;
