@@ -35,7 +35,7 @@ public class TesteTelefone {
 		
 		if(telefone != null) {
 			
-			telefone.disca("95426844");
+			telefone.disca("\nChamando de um: " + telefone.getTipo() + "\nLigando para: 95426844");
 			telefone.toca(2);
 		
 		}

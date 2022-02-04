@@ -7,6 +7,8 @@ public abstract class Telefone {
 	abstract public void disca(String numero);
 	abstract public void toca(int numToques);
 	
+
+	
 	public Telefone(String tipo) {
 		
 		this.tipo = tipo;

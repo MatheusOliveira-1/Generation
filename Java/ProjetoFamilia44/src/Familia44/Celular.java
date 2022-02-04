@@ -30,7 +30,7 @@ public class Celular extends Telefone {
 	@Override
 	public void disca(String numero) {
 		
-		System.out.println("\nO núemro " + numero + " é um celular");
+		System.out.println("\nO número " + numero + " é um celular");
 	}
 
 }
